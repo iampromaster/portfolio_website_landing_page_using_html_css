@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 15px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #1abc9c;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background: linear-gradient(135deg, #1c1f24, #1abc9c);
+  color: #fff;
+}
+.hero .content {
+  max-width: 50%;
+  margin-top: 40px;
+}
+.hero .content h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+.hero .content p {
+  font-size: 19px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+.hero .content .btn {
+  background-color: #1abc9c;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.hero .content .btn:hover {
+  background-color: #16a085;
+}
+.social-icons {
+  margin-top: 35px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+  margin-right: 24px;
+  transition: 0.3s ease;
+}
+.social-icons a:hover {
+  color: #1abc9c;
+}
+
+.image-section {
+  max-width: 40%;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-section img {
+  width: 325px;
+  height: 325px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 60px;
+  transition: 0.3s ease;
+  z-index: 2;
+}
+.image-section img:hover {
+  transform: translateY(-7px);
+}
+.image-section .white-shape {
+  position: absolute;
+  width: 375px;
+  height: 375px;
+  background-color: #839e99;
+  top: -30px;
+  left: -20px;
+  margin-top: 60px;
+  border-radius: 50% 50% 40% 60% / 60% 50% 50% 40%;
+}
